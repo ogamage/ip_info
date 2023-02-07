@@ -3,15 +3,15 @@ import pandas as pd
 
 #ip Sort-out before the code runs
 lines_seen = set() # holds lines already seen
-outfile = open("/Users/ovin.gamage/Documents/Python Projects/IP Project/outfilename.txt", "w") 
-for line in open("/Users/ovin.gamage/Documents/Python Projects/IP Project/iplist.txt", "r"): 
+outfile = open("outfilename.txt", "w") 
+for line in open("iplist.txt", "r"): 
     if line not in lines_seen: 
         outfile.write(line)
         lines_seen.add(line)
 outfile.close()
 
 #code for open the ipfile (outfilename.txt) 
-file = open("/Users/ovin.gamage/Documents/Python Projects/IP Project/outfilename.txt", "r")
+file = open("outfilename.txt", "r")
 x = file.readlines() 
 y = []
 
